@@ -34,7 +34,15 @@ services:
       - key: WEBHOOK_URL
         value: https://n8n-service-05az.onrender.com
 
-      # These automatically populate connection details 
+      # TIMEZONE CONFIGURATION FOR MADRID, SPAIN
+      - key: GENERIC_TIMEZONE
+        value: Europe/Madrid
+
+      # Optional: Set default locale to Spanish
+      - key: N8N_DEFAULT_LOCALE
+        value: es
+
+      # These automatically populate connection details
       # for the Render Postgres database defined below
       - key: DB_TYPE
         value: postgresdb
