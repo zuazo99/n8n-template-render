@@ -31,6 +31,9 @@ services:
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
 
+      - key: WEBHOOK_URL
+        value: https://n8n-service-05az.onrender.com
+
       # These automatically populate connection details 
       # for the Render Postgres database defined below
       - key: DB_TYPE
